@@ -1,4 +1,4 @@
-# Basic Filter Table Example
+# Table async data example
 
 The table component retrieves data asynchronously.
 
