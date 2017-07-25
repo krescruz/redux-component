@@ -1,14 +1,11 @@
 import React from 'react'
-import FetchButton from './FetchButton'
+import LoadData from '../containers/LoadData'
 import DataTable from '../containers/DataTable'
 
-var handleRefreshClick = () => {
-    console.log('onClick');
-}
 
 const App = () => (
   <div>
-  	<FetchButton onClick={handleRefreshClick}/>
+  	<LoadData />
     <DataTable />
   </div>
 )

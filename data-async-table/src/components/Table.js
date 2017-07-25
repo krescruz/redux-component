@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RowTable from './RowTable';
 
-const Table = ({ data }) => (
+const Table = ({ projects }) => (
   <table>
     <thead>
       <tr>
@@ -12,7 +12,7 @@ const Table = ({ data }) => (
       </tr>
     </thead>
     <tbody>
-      {data.map(item =>
+      {projects.map(item =>
         <RowTable
           key={item.id}
           {...item}
@@ -23,7 +23,7 @@ const Table = ({ data }) => (
 )
 
 Table.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
+  projects: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,

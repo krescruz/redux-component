@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const FetchButton = ({ onClick }) => (
 	<button onClick={onClick}>
-		Refresh
+		Load data
 	</button>
 )
 
